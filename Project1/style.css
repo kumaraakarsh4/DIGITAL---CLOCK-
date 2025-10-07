@@ -1,0 +1,46 @@
+body {
+    transition: background-color 0.4s; /* Smooth color change */
+}
+
+.canvas {
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.button {
+    /* Define the button's size and display type */
+    display: inline-block; /* Allows setting width and height */
+    width: 100px;
+    height: 100px;
+    margin: 10px;
+    border: 2px solid #333;
+    border-radius: 5px;
+    cursor: pointer; /* Change mouse cursor to indicate clickability */
+}
+
+/* Assign specific background colors using the ID */
+#grey {
+    background-color: grey;
+}
+
+#white {
+    background-color: white;
+}
+
+#blue {
+    background-color: blue;
+}
+
+#yellow {
+    background-color: yellow;
+}
+#purple{
+    background-color: purple;
+}
+
+h2 span {
+    display: block; /* Makes the span on a new line */
+    margin-top: 10px;
+}
