@@ -20,3 +20,25 @@ div.style.padding="12px"
 const addtext = document.createTextNode("Hey ! I am Aakarsh")
 div.appendChild(addtext)
 document.body.appendChildappendChild(div)
+function addLanguage(LangName){
+   const element =  document.createElement('li');
+   element.innerHTML = `${LangName}`
+   document.querySelector('.language').
+   appendChild(element)
+   
+}
+addLanguage("Java")
+addLanguage("Python")
+addLanguage("c++")
+addLanguage("c#")
+
+
+// edit of value
+
+const first = document.querySelector("li:nth-child(4)")
+console.log(first);
+first.innerHTML = "Django"
+const second = document.querySelector("li:first-child")
+second.outerHTML = "<li> Wordpress </li>"
+const third = document.querySelector("li:last-child")
+third.remove()
