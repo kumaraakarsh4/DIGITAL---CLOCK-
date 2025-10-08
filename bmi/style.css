@@ -1,0 +1,153 @@
+/* --- Global Styles and Reset --- */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9; /* Light background */
+    color: #333; /* Default text color */
+    line-height: 1.6;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+}
+
+/* --- Navigation Bar Style --- */
+nav {
+    width: 100%;
+    background-color: #7e2a91; /* Primary color for nav */
+    padding: 15px 0;
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    padding: 0 15px;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+nav a:hover {
+    color: #cce5ff; /* Lighter color on hover */
+}
+
+/* --- Calculator Container --- */
+.container {
+    background-color: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    width: 90%;
+    max-width: 400px; /* Restrict max width for better design */
+    text-align: center;
+}
+
+h1 {
+    margin-bottom: 25px;
+    color: #333;
+    font-size: 1.8rem;
+}
+
+/* --- Form Styling --- */
+form p {
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+/* Style for the labels (assuming you fix the HTML to include visible text) */
+label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: #555;
+}
+
+input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+    transition: border-color 0.3s;
+}
+
+input[type="text"]:focus {
+    border-color: #007bff; /* Highlight on focus */
+    outline: none;
+}
+
+/* --- Calculate Button --- */
+/* --- CALCULATE BUTTON: BEAUTIFUL AND ATTRACTIVE --- */
+form button {
+    /* Base Styles (from your original) */
+    width: 100%;
+    padding: 15px; /* Slightly larger padding */
+    background-color: #007bff; /* Changed to primary blue */
+    color: white;
+    border: none;
+    border-radius: 8px; /* Softer rounded corners */
+    font-size: 1.15rem; /* Slightly larger text */
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 20px;
+    
+    /* Aesthetics and Interactivity */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    transition: all 0.3s ease; /* Smooth transition for hover effects */
+    letter-spacing: 0.5px; /* Better readability */
+    
+    /* 3D Effect on the bottom */
+    border-bottom: 4px solid #0056b3; 
+}
+
+form button:hover {
+    /* Hover State (lifts the button slightly) */
+    background-color: #0056b3; /* Darker blue on hover */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* Deeper shadow on hover */
+    transform: translateY(-2px); /* Lifts the button up */
+    border-bottom: 2px solid #0056b3; /* Reduces the 3D depth */
+}
+
+form button:active {
+    /* Active State (the button press effect) */
+    transform: translateY(0); /* Pushes the button back down */
+    border-bottom: 4px solid #0056b3;
+}
+/* --- Result and Guide Sections --- */
+#result {
+    margin-top: 25px;
+    font-size: 1.4rem;
+    font-weight: bold;
+    color: #007bff; /* Blue to highlight the result */
+    min-height: 40px; /* Ensure space even when empty */
+    border: 1px dashed #ccc;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+#weight-Guide {
+    margin-top: 30px;
+    padding: 15px;
+    background-color: #f8f9fa; /* Light background for the guide box */
+    border-radius: 8px;
+    border-left: 5px solid #ffc107; /* Yellow accent border */
+    text-align: left;
+}
+
+#weight-Guide h3 {
+    margin-bottom: 10px;
+    color: #007bff;
+    font-size: 1.2rem;
+}
+
+#weight-Guide p {
+    margin: 5px 0;
+    font-size: 0.95rem;
+}
